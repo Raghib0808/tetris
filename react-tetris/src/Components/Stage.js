@@ -11,8 +11,7 @@ const Stage=({stage})=>{
         <StyleStage width={stage[0].length} height={stage.height} >
             {
                 stage.map(row=>row.map((cell,x)=>{
-                    // console.log(cell[0]);
-                    
+                     
                     return <Cell  key={x} type={cell[0]}/> 
                     }
                 ))
