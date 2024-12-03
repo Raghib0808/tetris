@@ -1,13 +1,23 @@
 import React from "react";
 import Cell from "./Cell";
 
+// importing the styled component;
+import {StyleStage} from "./Styles/StyleStage"
+
 const Stage=({stage})=>{
+    
+    
     return(
-        <div>
+        <StyleStage width={stage[0].length} height={stage.height} >
             {
-                stage.map(row=>row.map((cell,x)=><Cell  key={x} type={cell[0]}/>))
+                stage.map(row=>row.map((cell,x)=>{
+                    // console.log(cell[0]);
+                    
+                    return <Cell  key={x} type={cell[0]}/> 
+                    }
+                ))
             }
-        </div>
+        </StyleStage>
     )
 }
 

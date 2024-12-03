@@ -7,8 +7,8 @@ const Cell=({type})=>{
     return(
         <div>
             
-        {/* <div>cell</div> */}
-         <StyledCell>cell</StyledCell>
+          <StyledCell type={type} color={TETROMINOS[type].color}></StyledCell>
+        
         </div>
     )
 }
